@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  color: hsl(238, 29%, 16%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section {
+  padding: 12rem 0;
+}
+
+.faq-card {
+  max-height: 50rem;
+  display: flex;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 7rem 12rem;
+  overflow: hidden;
+}
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.box-picture {
+  display: relative;
+  overflow: hidden;
+}
+.women-online {
+  transform: translate(-43%, -265%);
+  z-index: 1000;
+}
+
+.primary-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.4rem;
+  padding-bottom: 2.5rem;
+}
+.secondary-heading {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.box-question {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  transition: all 0.3s;
+}
+
+.visible-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qn-answer {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: hsl(240, 6%, 50%);
+  padding-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.qn-active {
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+}
+
+.background-img {
+  max-width: 10rem;
+  transform: translate(-680%, -38%);
+}
+.box-img {
+  position: absolute;
+  transform: translate(-112%, -635%);
+  z-index: 10000000;
+}
+
+.secondary-heading:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 45%;
+    overflow-y: hidden;
+  }
+  .container {
+    max-width: 40rem;
+  }
+  .faq-card {
+    margin-top: 4rem;
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .women-online {
+    transform: scale(0.4) translate(-55%, -800%);
+    position: absolute;
+  }
+  .background-img {
+    max-width: none;
+    transform: scale(0.2) translate(-145%, -263%);
+  }
+  .box-pictures {
+    max-height: 10rem;
+  }
+  .primary-heading {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .qna {
+    padding-bottom: 4rem;
+  }
+  .box-question {
+    padding: 2rem 0;
+  }
+  .box-img {
+    transform: scale(0.4) translate(-22%, -1400%);
+  }
+}
